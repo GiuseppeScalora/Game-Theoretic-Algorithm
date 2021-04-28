@@ -31,4 +31,16 @@ brief overview at the most commonly used applications
 
 what key points can we extract from this presentation and brief summary of what has been discussed
 
+## References
+
+Camerer, C., 2003. Behavioral game theory. New York :s: Russell Sage Foundation. 
+
+Gintis, H., 2000. Game theory evolving. Princeton, NJ: Princeton University Press. 
+
+Osborne, M., 2012. An introduction to game theory. New York: Oxford University Press. 
+
+Webb, J., 2007. Game theory. London: Springer. 
+
+Nisan, N., Roughgarden, T., Tardos, E. and Vazirani, V., 2008. Algorithmic game theory. Cambridge: Cambridge University Press. 
+
 
