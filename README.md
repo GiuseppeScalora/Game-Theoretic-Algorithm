@@ -1,5 +1,7 @@
 # Game-Theoretic-Algorithm
- Research and presentation of the game theoretic algorithm for "Hardware/software co-design". ELE, 6th semester, HSHL.
+ Research and presentation of the game theoretic algorithm for "Hardware/software co-design". 
+ 
+ Scalora Giuseppe, ELE, 6th semester, HSHL.
  
 ## Motivation
 
