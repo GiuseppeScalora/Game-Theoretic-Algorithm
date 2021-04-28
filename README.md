@@ -13,7 +13,7 @@ explanation of what the theory is about
 
 brief background introduction of the concept
 
-## Working principle behind game theoretic
+## The game theory algorithm
 
 explanation of how this theory works or is applied in real life
 
