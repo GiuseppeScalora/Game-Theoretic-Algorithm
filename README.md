@@ -42,5 +42,6 @@ Osborne, M., 2012. An introduction to game theory. New York: Oxford University P
 Webb, J., 2007. Game theory. London: Springer. 
 
 Nisan, N., Roughgarden, T., Tardos, E. and Vazirani, V., 2008. Algorithmic game theory. Cambridge: Cambridge University Press. 
+Leyton-Brown, Kevin; Shoham, Yoav (2008), Essentials of Game Theory: A Concise, Multidisciplinary Introduction, San Rafael, CA: Morgan & Claypool Publishers, ISBN 978-1-59829-593-1. An 88-page mathematical introduction
 
 
