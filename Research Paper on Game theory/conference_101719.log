@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.4.28)  5 MAY 2021 20:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.4.28)  11 MAY 2021 15:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -306,56 +306,63 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 Package textcomp Info: Symbol \textasciiacute not provided by
 (textcomp)             font family ptm in TS1 encoding.
 (textcomp)             Default family used instead on input line 57.
-<../../../../Desktop/Screenshot (23).png, id=1, 431.36156pt x 242.40562pt>
-File: ../../../../Desktop/Screenshot (23).png Graphic file (type png)
-<use ../../../../Desktop/Screenshot (23).png>
-Package pdftex.def Info: ../../../../Desktop/Screenshot (23).png  used on input
- line 60.
+<matrix.png, id=1, 431.36156pt x 242.40562pt>
+File: matrix.png Graphic file (type png)
+<use matrix.png>
+Package pdftex.def Info: matrix.png  used on input line 60.
 (pdftex.def)             Requested size: 215.68025pt x 121.2025pt.
  [1{c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
- <../../../../Desktop/Screenshot (23).png>]
-<../../../../Desktop/Screenshot (24).png, id=17, 438.8897pt x 246.9225pt>
-File: ../../../../Desktop/Screenshot (24).png Graphic file (type png)
-<use ../../../../Desktop/Screenshot (24).png>
-Package pdftex.def Info: ../../../../Desktop/Screenshot (24).png  used on input
- line 80.
+ <./matrix.png>]
+<gametree.png, id=17, 438.8897pt x 246.9225pt>
+File: gametree.png Graphic file (type png)
+<use gametree.png>
+Package pdftex.def Info: gametree.png  used on input line 80.
 (pdftex.def)             Requested size: 219.4443pt x 123.46094pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--87
-[]\OT1/ptm/m/n/10 In or-der to un-der-stand the ex-am-ple, the tree
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 79--87
-\OT1/ptm/m/n/10 will be first shown and there-fore an-a-lyzed.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 79--87
+Underfull \hbox (badness 10000) in paragraph at lines 79--88
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--87
+Underfull \hbox (badness 10000) in paragraph at lines 79--88
 
  []
 
-[2 <../../../../Desktop/Screenshot (24).png>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--88
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--107
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--107
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--107
+
+ []
+
+[2 <./gametree.png>]
 <fig1.png, id=22, 82.1469pt x 71.5473pt>
 File: fig1.png Graphic file (type png)
 <use fig1.png>
-Package pdftex.def Info: fig1.png  used on input line 145.
+Package pdftex.def Info: fig1.png  used on input line 134.
 (pdftex.def)             Requested size: 82.14668pt x 71.5471pt.
 LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 1
-56.
-
-(c:/texlive/2021/texmf-dist/tex/latex/psnfss/omsptm.fd
+45.
+ (c:/texlive/2021/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 156.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 145.
 
 
 ** Conference Paper **
@@ -370,13 +377,13 @@ Before submitting the final camera ready copy, remember to:
 
 [3 <./fig1.png (PNG copy)>] (./conference_101719.aux) ) 
 Here is how much of TeX's memory you used:
- 3962 strings out of 478994
- 57200 string characters out of 5862207
- 363017 words of memory out of 5000000
+ 3960 strings out of 478994
+ 56874 string characters out of 5862207
+ 364017 words of memory out of 5000000
  21399 multiletter control sequences out of 15000+600000
  450553 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,11n,74p,998b,293s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,11n,74p,1016b,293s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2021/texmf-d
 ist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{c:/texlive/2021/texmf-dist/fonts
 /enc/dvips/base/8r.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/
@@ -387,7 +394,7 @@ live/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021
 t/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/
 times/utmbi8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
 <c:/texlive/2021/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on conference_101719.pdf (3 pages, 139564 bytes).
+Output written on conference_101719.pdf (3 pages, 139831 bytes).
 PDF statistics:
  58 PDF objects out of 1000 (max. 8388607)
  38 compressed objects within 1 object stream
