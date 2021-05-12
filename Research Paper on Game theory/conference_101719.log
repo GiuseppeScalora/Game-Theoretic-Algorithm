@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.4.28)  11 MAY 2021 15:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.4.28)  12 MAY 2021 09:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -315,6 +315,9 @@ Package pdftex.def Info: matrix.png  used on input line 60.
 
 
  <./matrix.png>]
+
+LaTeX Warning: Citation `b7' on page 2 undefined on input line 72.
+
 <gametree.png, id=17, 438.8897pt x 246.9225pt>
 File: gametree.png Graphic file (type png)
 <use gametree.png>
@@ -351,18 +354,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 105--107
  []
 
 [2 <./gametree.png>]
-<fig1.png, id=22, 82.1469pt x 71.5473pt>
-File: fig1.png Graphic file (type png)
-<use fig1.png>
-Package pdftex.def Info: fig1.png  used on input line 134.
-(pdftex.def)             Requested size: 82.14668pt x 71.5471pt.
-LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 1
-45.
- (c:/texlive/2021/texmf-dist/tex/latex/psnfss/omsptm.fd
-File: omsptm.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 145.
+
+LaTeX Warning: Citation `b1' on page 3 undefined on input line 127.
+
+
+LaTeX Warning: Citation `b2' on page 3 undefined on input line 128.
+
+
+LaTeX Warning: Citation `b3' on page 3 undefined on input line 129.
+
+
+LaTeX Warning: Citation `b3' on page 3 undefined on input line 129.
+
+
+LaTeX Warning: Citation `b3' on page 3 undefined on input line 129.
+
+
+LaTeX Warning: Citation `b3' on page 3 undefined on input line 130.
+
+
+LaTeX Warning: Citation `b4' on page 3 undefined on input line 138.
+
+
+LaTeX Warning: Citation `b5' on page 3 undefined on input line 139.
+
+
+LaTeX Warning: Citation `b6' on page 3 undefined on input line 144.
 
 
 ** Conference Paper **
@@ -375,29 +392,35 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[3 <./fig1.png (PNG copy)>] (./conference_101719.aux) ) 
+[3] (./conference_101719.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 3960 strings out of 478994
- 56874 string characters out of 5862207
- 364017 words of memory out of 5000000
- 21399 multiletter control sequences out of 15000+600000
- 450553 words of font info for 113 fonts, out of 8000000 for 9000
+ 3919 strings out of 478994
+ 56351 string characters out of 5862207
+ 363989 words of memory out of 5000000
+ 21369 multiletter control sequences out of 15000+600000
+ 445083 words of font info for 103 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,11n,74p,1016b,293s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2021/texmf-d
-ist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{c:/texlive/2021/texmf-dist/fonts
-/enc/dvips/base/8r.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmmi10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.
-pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/tex
-live/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021
-/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2021/texmf-dis
-t/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/
-times/utmbi8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-<c:/texlive/2021/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on conference_101719.pdf (3 pages, 139831 bytes).
+ 68i,8n,74p,1016b,255s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{c:/tex
+live/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2021/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2021/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sf
+rm1000.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/tex
+live/2021/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><c:/texlive/2021/texmf-d
+ist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/ur
+w/times/utmri8a.pfb>
+Output written on conference_101719.pdf (3 pages, 128252 bytes).
 PDF statistics:
- 58 PDF objects out of 1000 (max. 8388607)
- 38 compressed objects within 1 object stream
+ 53 PDF objects out of 1000 (max. 8388607)
+ 35 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
