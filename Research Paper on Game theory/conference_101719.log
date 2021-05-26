@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.4.28)  12 MAY 2021 09:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.4.28)  26 MAY 2021 09:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -291,13 +291,23 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 30.
+Package textcomp Info: Symbol \textasciiacute not provided by
+(textcomp)             font family ptm in TS1 encoding.
+(textcomp)             Default family used instead on input line 30.
+Package textcomp Info: Symbol \textasciiacute not provided by
+(textcomp)             font family ptm in TS1 encoding.
+(textcomp)             Default family used instead on input line 46.
+ [1{c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+
+]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 55.
 
 
 (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 30.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 55.
 
 
 (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -305,81 +315,84 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 Package textcomp Info: Symbol \textasciiacute not provided by
 (textcomp)             font family ptm in TS1 encoding.
-(textcomp)             Default family used instead on input line 57.
-<matrix.png, id=1, 431.36156pt x 242.40562pt>
+(textcomp)             Default family used instead on input line 59.
+<matrix.png, id=12, 431.36156pt x 242.40562pt>
 File: matrix.png Graphic file (type png)
 <use matrix.png>
-Package pdftex.def Info: matrix.png  used on input line 60.
+Package pdftex.def Info: matrix.png  used on input line 63.
 (pdftex.def)             Requested size: 215.68025pt x 121.2025pt.
- [1{c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+Package textcomp Info: Symbol \textasciiacute not provided by
+(textcomp)             font family ptm in TS1 encoding.
+(textcomp)             Default family used instead on input line 64.
 
 
- <./matrix.png>]
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-LaTeX Warning: Citation `b7' on page 2 undefined on input line 72.
-
-<gametree.png, id=17, 438.8897pt x 246.9225pt>
+<gametree.png, id=14, 438.8897pt x 246.9225pt>
 File: gametree.png Graphic file (type png)
 <use gametree.png>
-Package pdftex.def Info: gametree.png  used on input line 80.
-(pdftex.def)             Requested size: 219.4443pt x 123.46094pt.
+Package pdftex.def Info: gametree.png  used on input line 87.
+(pdftex.def)             Requested size: 307.22069pt x 172.84456pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--88
-
- []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--88
+Underfull \hbox (badness 10000) in paragraph at lines 92--98
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--88
+Underfull \hbox (badness 10000) in paragraph at lines 92--98
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--107
+Underfull \hbox (badness 10000) in paragraph at lines 92--98
+
+ []
+
+[2 <./matrix.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 114--118
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--107
+Underfull \hbox (badness 10000) in paragraph at lines 114--118
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 105--107
-
- []
-
-[2 <./gametree.png>]
-
-LaTeX Warning: Citation `b1' on page 3 undefined on input line 127.
-
-
-LaTeX Warning: Citation `b2' on page 3 undefined on input line 128.
-
-
-LaTeX Warning: Citation `b3' on page 3 undefined on input line 129.
-
-
-LaTeX Warning: Citation `b3' on page 3 undefined on input line 129.
-
-
-LaTeX Warning: Citation `b3' on page 3 undefined on input line 129.
-
-
-LaTeX Warning: Citation `b3' on page 3 undefined on input line 130.
-
-
-LaTeX Warning: Citation `b4' on page 3 undefined on input line 138.
-
-
-LaTeX Warning: Citation `b5' on page 3 undefined on input line 139.
-
-
-LaTeX Warning: Citation `b6' on page 3 undefined on input line 144.
+[3 <./gametree.png>]
+Package textcomp Info: Symbol \textasciiacute not provided by
+(textcomp)             font family ptm in TS1 encoding.
+(textcomp)             Default family used instead on input line 135.
+Package textcomp Info: Symbol \textasciiacute not provided by
+(textcomp)             font family ptm in TS1 encoding.
+(textcomp)             Default family used instead on input line 136.
+<netlist.png, id=27, 401.24907pt x 185.19188pt>
+File: netlist.png Graphic file (type png)
+<use netlist.png>
+Package pdftex.def Info: netlist.png  used on input line 141.
+(pdftex.def)             Requested size: 240.75128pt x 111.11597pt.
+<cascade network.png, id=28, 261.97874pt x 181.67876pt>
+File: cascade network.png Graphic file (type png)
+<use cascade network.png>
+Package pdftex.def Info: cascade network.png  used on input line 151.
+(pdftex.def)             Requested size: 157.18845pt x 109.00809pt.
+Package textcomp Info: Symbol \textasciiacute not provided by
+(textcomp)             font family ptm in TS1 encoding.
+(textcomp)             Default family used instead on input line 165.
+Package textcomp Info: Symbol \textasciiacute not provided by
+(textcomp)             font family ptm in TS1 encoding.
+(textcomp)             Default family used instead on input line 169.
+<ASE equations.png, id=29, 511.9125pt x 440.39531pt>
+File: ASE equations.png Graphic file (type png)
+<use ASE equations.png>
+Package pdftex.def Info: ASE equations.png  used on input line 172.
+(pdftex.def)             Requested size: 255.95563pt x 220.19711pt.
+ [4 <./netlist.png> <./cascade network.png>]
+Package textcomp Info: Symbol \textasciiacute not provided by
+(textcomp)             font family ptm in TS1 encoding.
+(textcomp)             Default family used instead on input line 178.
 
 
 ** Conference Paper **
@@ -392,35 +405,34 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[3] (./conference_101719.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+[5 <./ASE equations.png>] (./conference_101719.aux) ) 
 Here is how much of TeX's memory you used:
- 3919 strings out of 478994
- 56351 string characters out of 5862207
- 363989 words of memory out of 5000000
- 21369 multiletter control sequences out of 15000+600000
- 445083 words of font info for 103 fonts, out of 8000000 for 9000
+ 3929 strings out of 478994
+ 56608 string characters out of 5862207
+ 365041 words of memory out of 5000000
+ 21380 multiletter control sequences out of 15000+600000
+ 441642 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,8n,74p,1016b,255s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{c:/tex
-live/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2021/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2021/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sf
-rm1000.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/tex
-live/2021/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><c:/texlive/2021/texmf-d
-ist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/ur
-w/times/utmri8a.pfb>
-Output written on conference_101719.pdf (3 pages, 128252 bytes).
+ 68i,8n,74p,1605b,313s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2021/texmf-dis
+t/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{c:/texlive/2021/texmf-dist/fonts/e
+nc/dvips/base/8r.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmex10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.p
+fb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/tex
+live/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2021/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public
+/cm-super/sfrb0900.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/
+sfrm0800.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1000.p
+fb><c:/texlive/2021/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/202
+1/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><c:/texlive/2021/texmf-dist/font
+s/type1/urw/times/utmr8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/times/
+utmri8a.pfb>
+Output written on conference_101719.pdf (5 pages, 281008 bytes).
 PDF statistics:
- 53 PDF objects out of 1000 (max. 8388607)
- 35 compressed objects within 1 object stream
+ 89 PDF objects out of 1000 (max. 8388607)
+ 57 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

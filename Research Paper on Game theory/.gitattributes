@@ -1,3 +1,6 @@
 fig1.png filter=lfs diff=lfs merge=lfs -text
 gametree.png filter=lfs diff=lfs merge=lfs -text
 matrix.png filter=lfs diff=lfs merge=lfs -text
+ASE[[:space:]]equations.png filter=lfs diff=lfs merge=lfs -text
+cascade[[:space:]]network.png filter=lfs diff=lfs merge=lfs -text
+netlist.png filter=lfs diff=lfs merge=lfs -text

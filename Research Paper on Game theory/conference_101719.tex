@@ -13,7 +13,7 @@
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
 
-\title{Game Theory on High-Level-Synthesis\\
+\title{Game Theory and High-Level-Synthesis applications\\
 }
 
 \author{\IEEEauthorblockN{ Giuseppe Scalora}
@@ -27,21 +27,23 @@ giuseppe.scalora@stud.hshl.de}
 \maketitle
 
 \begin{abstract}
-This document is a model and instructions for \LaTeX.
-This and the IEEEtran.cls file define the components of your paper [title, text, heads, etc.]. *CRITICAL: Do Not Use Symbols, Special Characters, Footnotes, 
-or Math in Paper Title or Abstract.
+This paper´s goal is to understand what Game theory is and how it is used in applications for High level synthesis. It focuses on the main key concepts behind the general theory and algorithms, with some general knowledge about the background and the motivation. It discusses and explains some popular examples which are essential in order to understand and further proceed to read through the topic. It follows with two specific applications which are strictly related to the area of high level synthesis and more specifically in the area of Hardware systems design. The final part then sums up the key concepts and concludes with a comparison of the advantages and disadvantages of using this applied method in this specific field. 
 \end{abstract}
 
 \begin{IEEEkeywords}
-component, formatting, style, styling, insert
+games, high-level-synthesis, hardware, algorithm, hardware, design
 \end{IEEEkeywords}
 
 \section{Introduction}
-This document is a model and instructions for \LaTeX.
-Please observe the conference page limits. 
+Mathematical models have always been used in order to provide aid for the specifications or development of new technologies and discoveries in the field of physics, economics, chemistry and we could go on forever listing all of them. Most importantly in the last century, with the latest implementations and improvements of new and old revisited mathematical models, the field of hardware and software engineering has been heavily affected in order to develop new strategies for design and construction purposes. More specifically for high level synthesis, there are many mathematical models which can be applied and be of interesting use. One of this is the so called Game theory, an idea that was conceived in the 18th century within the scope of economic applications. Since then the improvement and new discoveries on the field rendered the application of this mathematical model and algorithms useful in many other fields. The relevant one for our purpose will be the already mentioned field of hardware engineering/design. The latter is mainly focused on the verification and security of a hardware system, the improvement of design techniques to render the production more reliable and higly functional. Game theory is based upon the theory of rational choices, this implies that a decision maker chooses an action according to his/her preferences. The mathematical model of the game theory is basically only based upon decision making of some players acting within the system and maximization of outputs decisions considering the preferences and other players in the model.
+
+
 
 \section{Background of game theory}
 The very beginning of some ideas regarding the game theory seem to be assigned to the 18th century while the actual and first development began in the early years of the 20th century (around 1920s) with the work of the mathematicians Emile Borel (1871–1956) and John von Neumann (1903–57). The latter mentioned, published a first work on game theory, alongside Oskar Morgenstein, called "Theory of games and economic behaviour". In the 1950s game-theoretic models began to be used in economic theory, political science and also by psychologists who began studying how human subjects behave in experimental games. Later during the 70s the theory started taking place and being applied into many others fields, one of this recently included, which is computer science[1] (introduction to game theory reference).
+
+\section{Game theory general model}
+This model based theory consists mainly of two components, a set A of actions that the decision maker can choose upon and specifications of the decision maker´s preferences. Normally, the decision maker is aware of the spectrum of decisions available and it is only allowed to choose one among each set of actions. The set A can include things such as deciding upon whether to eat fish, meat or vegetables, or deciding whether to drink wine, water or coke. Most of the times 2 sets go side by side which means the decision maker has to choose a pair of actions and not just a single one among multiple sets. In terms of preferences, instead, the decision maker can have a favourite option or some equally desirable ones. Let us take the example of a decision maker preferring coke over wine and wine over water, the outcome of this will imply that the decision maker will prefer coke over water. In order to formally define the preferences a payoff function, between actions and numbers, is represented. The numbers represent the value of the preference, the higher the number the more preferred the action.
 
 \section{The key concepts behind the theory}
 In order to understand how and why this algorithm has been developed it is necessary to get familiar with some important concepts used as means of understanding for everyone.
@@ -57,8 +59,12 @@ Therefore the definition of a static game describes games in which the decisions
 A very popular example of such games is shown and explained in the following paragraph: "the prisoner´s dilemma".
 \subsubsection{The prisoner's dilemma}
 Let us assume two different prisoners are going through a trial for a crime, whether it has occured for real or not. Both prisoners have a degree of freedom limited to 2 possible answers, confessing or remain silent, therefore the number of possible outcomes is bounded to 4. These, respectively, are: scenario 1 (For simplification prisoner 1 and 2 will be assessed by using simply P1 and P2). P1 confesses and P2 confesses, this outcome leads both prisoners to be sentenced to 4 years of prison. Scenario 2. P1 confesses and P2 remains silent which leads to P1 being sentenced to 1 year of prison while P2 is sentenced to 5 years. Scenario 3. P1 remains silent and P2 confesses, this will result in the opposite of what just mentioned, P1 will get 5 years and P2 only 1 year. Scenario 4. P1 and P2 remain silent, this will lead to both being sentenced to only 1 year. For a better understanding, the following matrix will visually show the concept in a more schematic way.
-\centerline{\includegraphics[scale=0.5]{matrix.png}}  
-\centerline{\textit{Image 1 - prisoner's dilemma matrix}}
+\begin{figure}[h]
+    \centerline{\includegraphics[scale=0.5]{matrix.png}}
+    \caption{Prisoner´s dilemma matrix}
+    \label{pdmatrix}
+\end{figure}
+
 
 Now as you can see from this 2X2 matrix, the most stable outcome would be the scenario 1, in which both prisoners confess the crime and are not, obviously, allowed to change their declaration at any given time. Meanwhile within the rest of the scenarios the prisoners might decide, at any point, to change their mind in order to obtain a better outcome for themselves, more on the aspect of being egoistic[2](algorithmic game theory reference).
 
@@ -76,9 +82,13 @@ On the contrary of static games, dynamic games involve many situations of intere
 made at various times, not simultaneously, taking into account the choices made earlier. Therefore dynamic games introduce an explicit time-schedule which describes the exact time spans, or time points, during which the players make their decisions.
 Dynamic games can be represented by a game decision tree. The filled black circles show the time points at which decisions are taken. The connections between circles are self explanatory, they represent branches from which other action could occur. At the bottom of the tree, after every decision sequence has come to its end, there is the payoff, usually specified and written. By convention the tree is drawn "upside-down" which means that the time increases as the tree branches downwards. (reference: game theory Webb book)
 \subsubsection{Dinner party game}
-In order to understand the example, the tree will be first shown and therefore analyzed.\\
-\centerline{\includegraphics[scale=0.5]{gametree.png}}  
-\centerline{\textit{Image 2 - dinner party game tree}}
+In order to understand the example, the tree will be first shown and therefore analyzed.
+\begin{figure}[h]
+    \centerline{\includegraphics[scale=0.7]{gametree.png}}
+    \caption{dinner party game tree}
+    \label{gametree}
+\end{figure}
+
 Let us consider the tree shown, in which the Husband will start the tree of decisions by buying either meat (M) or fish (F). Meanwhile the Wife will buy either Red wine (R) or White wine (W). We assume that both wife and husband prefer to drink red wine with meat and white wine with fish. Although the husband prefers to eat meat for dinner and the wife prefers the opposite, the fish. The possible payoffs will be stated as following:\\ \\
 \centerline{$\pi$\textsubscript{h} (M, R) = 2 ,  $\pi$\textsubscript{h} (F, W) = 1} \\
 \centerline{$\pi$\textsubscript{h} (F, R) = $\pi$\textsubscript{h} (M, W) = 0} \\\\
@@ -98,50 +108,89 @@ We suppose two firms are competing with each other, producing the same good. Fir
 Given these initial information:
 \begin{enumerate}
 \item Set of 2 players (firms), \textit{i}
-\item Set of sequences (q\textsubscript{1}, q\textsubscript{2} of firms outputs.
-\item 
+\item Set of sequences (q\textsubscript{1}, q\textsubscript{2} of firms outputs).
 \end{enumerate}
 
  we can calculate the payoff for each firm which will look as such:\\\\
 \centerline{q\textsubscript{i}P(q\textsubscript{1} + q\textsubscript{2}) - C\textsubscript{i}(q\textsubscript{i}) for i = 1,2}\\\\
+Firm 1 always moves first, generating an output strategy, and firm 2 always follows everytime firm 1 generates an output. Given that, using backward induction we can retrieve a solution.
+\begin{enumerate}
+\item For each firm 1 output, a firm 2 output is generated with the goal of maximizing the profits. The output of firm 2 is defined as \textit{b\textsubscript{2}} for output of firm 1, defined \textit{q\textsubscript{1}}.
+\item For each output, firm 1 must also decides its strategy upon maximization of its profit, so if firm 1 output is \textit{q\textsubscript{1}} and firm 2 output is \textit{b\textsubscript{2}}, the total selling price \textit{P\textsubscript{d}} is given by the sum of \textit{q\textsubscript{1}} + \textit{b\textsubscript{2}}.
+\end{enumerate}
+Therefore, if firm 2 best output is \textit{b\textsubscript{2}} and firm 1 best output depends on firm 2 outputs, the new output for firm 1 will be defined as \textit{q*\textsubscript{1}}
+therefore, the pair (\textit{q*\textsubscript{1}},\textit{b\textsubscript{2}}) will now lead firm 2 to behave accordingly to firm 1 new possible output, hence the new output for firm 2 will be \textit{q*\textsubscript{2}} coming, in conclusion, to a win-win situation for both firms, in which they perceives the maximum profits . This then leads to a subgame perfect equilibrium defined by the pair (\textit{q*\textsubscript{1}}, \textit{q*\textsubscript{2}}).
 
 \section{Applications}
 \subsection{Game theory on Trojan detection for HLS}
-Planning to write at least 2 columns on this to get a brief overview of such application.
-\subsection{Validation and verification of hardware design through Game theory}
-Same as what has been stated for the previous section.
+\subsubsection{Motivation}
 
-\section{Results and evaluation}
+\subsubsection{Approach and implementation}
+\subsection{Validation and verification of hardware design using the Game theory}
+\subsubsection{Motivation}
+When it comes to Hardware verification and validation, it is important to ensure that the design properties and goals, are specified accurately for the overall purpose of the final hardware design process. The accuracy is handled by a cooperation of the full spectrum of design teams which have to work on the project, therefore it requires a highly efficient communication among the teams. In terms of hardware verifications, it is necessary to apply mathematical models as proof of stability and accuracy for the implementation (reason why the Game Theory algorithm is feasible for this scope, being itself a mathematical model). The main focus of this application is the analysis and solution of problems regarding the security in Hardware systems and the correction of the desired behaviours of the already mentioned systems.
+Game theory, is applied here due to its useful aid in terms of securing physical aspects, strategic resources and power infrastructure. As already mentioned in the paper, more specifically, the Stackelberg game formulations will come in help. The main concept behind this is: the assumption that an attacker can observe all the security decisions placed by the defender. Verifying a hardware design as result of a security strategy implies that deployment schedules need to be as strict as possible, the state space size of the system, depends on its complexity and how critical the design is.
+. 
+\subsubsection{Approach}
+In order to approach the problem of verification and validation of hardware design it is necessary to focus the interest into finding regions, of a complex hardware system, which are more vulnerable to possible malicious attacks. Given that the most vulnerable parts are composed by logic gates, the main feature that must be looked upon is a gate´s propensity to propagate failures or attacks to the final output of the whole system (which will lead to inevitable errors and faults compromising the behaviour and function of the system).
+Stackelberg Security games model is the way to go when security specific scenarios, in hardware design, have to be considered. Always in respect to the design´s specification, security means protection against any fault that can compromise the behaviour of the system or any malicious attack performed by third parts.
+\subsubsection{Implementation}
+To briefly describe how the system is implemented, the following chapter will analyze the behaviour of a hardware system, when a SSG model is applied.
+The main property to compute for security is the value of the defender of a vulnerable target. This is realized of the combination of how succesful an attack can be and the individual value of the target. Taking into account that a target will most likely be a netlist constructed by a Boolean network of logic gates, it is important to select the output wire for each flip-flop, within the target area of the hardware system, and we call it a Boolean node. Each output will then be the input of another flip-flop. Output nodes are defined as \textit{j} and input nodes to a flip-flop are defined as \textit{i}, these both, connected together, form an edge (\textit{i}, \textit{j}). The Boolean network G = (T, E), where T is the set of nodes or targets, and E is the set of edges, is shown in the following figure.
+\begin{figure}[h]
+    \centerline{\includegraphics[scale=0.6]{netlist.png}}
+    \caption{Netlist of flip-flops and logic gates}
+    \label{netlist}
+\end{figure} 
+
+Given that, the transfer function for each node can be represented as a truth table of the given logic circuit. Usually obtained through independent simulation. The computation of defenders values relies on two concepts called, respectively, \textit{influence} and \textit{independent cascade contagion}. Let us briefly explain what they are.
+\begin{enumerate}
+\item \textit{Influence} defines the probability of a given bit value \textit{i} belonging to an input vector \textit{y} to change the output  for the transfer function of a boolean node \textit{j}. Technically speaking, low influence inputs can be overlooked during coverage tests as possible malicious insertion points, while high influence inputs are more propense to spread failures throughout the system, therefore they are considered in critical applications. Truth tables help to calculate the influence for given nodes and the complexity increases exponentially as the number of inputs increases.
+\item \textit{Independent cascade contagion} defines the determination process of the contagion failure rate throughout the system. The input graph takes the network G = (T, E), as explained earlier, and defines the probability \textit{p}\textsubscript{i,i'} of the failure spread rate among the neighbors nodes, an example of the boolean network is shown as following:
+\begin{figure}[h]
+    \centerline{\includegraphics[scale=0.6]{cascade network.png}}
+    \caption{Converted Boolean network with cascade contagion probability}
+    \label{cascade}
+\end{figure} 
+
+\end{enumerate}
+
+The utility function of a defender at target \textit{t}, is obtained, depending on three variables, such as: level of verification effort applied to target \textit{t} defined as \textit{q\textsubscript{t}}, the evaluation of \textit{t}, \textit{v\textsubscript{t}}, and spread contagion probability of \textit{t} to propagate to \textit{t}' for $\textit{t}' \in T$.
+
+\begin{displaymath}
+U(t) = E[\sum_{t'\in T}(-v_{t'})\rho_{t'}(t)]
+\end{displaymath}
+
+
+This utility function chooses the defender strategies to apply in order to minimize the losses. Accordingly, the attacker´s utility function is defined as V\textsubscript{t} = -U\textsubscript{t}.
+
+\subsubsection{SSG applied and interpreted}
+The concept of Stackelberg games has been introduced and discussed already. In this matter is important to apply the previous example in concern of a hardware system, therefore the 2 players acting in this scenario are: the attacker, A and the defender, D, who is the hardware designer/engineer.
+The solution applied to hardware verification with the aid of the Stackelberg games, aims to find equilibrium strategies which stabilize both attacker and defender on their own decisions. The attacker´s goal is to maximize the damage to the system but the defender is assumed to know the attacker utility function, which then leads the attacker to observe first which target nodes have been verified and secured by the defender, thus a Stackelberg equilibrium is created between both sides. Adopting the average-case Stackelberg equilibrium (ASE), makes sure that the attacker, in case it is ever indifferent of the node to attack, will decide upon a random one. This ASE helps the designer teams, to work on the same system although being non cooperative, because it considers uncertainty in the system, whenever the attacker is in front of multiple possible vulnerable nodes.
+In order to compute ASE, the following mathematical constraints are necessary:
+\begin{figure}[h]
+    \centerline{\includegraphics[scale=0.5]{ASE equations.png}}
+    \caption{ASE computational equations}
+    \label{ase}
+\end{figure} 
+
+Accordingly, equation 1 serves to find the maximization of the utility for the defender, the solutions must respect constraints 2-8. 
+Constraints 4 and 7, meanwhile, enforce the maximization of the defender´s utility in respect to the attacker strategy. Constraint 4 forces the attacker to at least attack one node. Constraint 6 creates a gap variable between attacker optimal value and attacker target node value. Constraints 7 and 5 force the attacker to attack a node only if it can be done with maximum utility from the attacker. Lastly, constraint 8 is the final equation to find the maximum utility for the defender, given attacker strategy \textit{a} and defender strategy \textit{q}, once all the constraints have been satisfied. The results are then gonna be sorted from highest to lowest in to \textit{q}*
+To read and interpret the results of the mathematical model, we take the results for \textit{q}* and compare if the verification efforts have been distribuited properly, if so, then the target node \textit{t} is considered to be validated and secure, proportional to \textit{q}*\textsubscript{t}. For example, a \textit{q}*\textsubscript{t} value of 1 is considered to fully adhere to the verification specifications, while a value of 0 is not considered so but it is still not neglected, only put on a lower prioritization.
+
+
+
 
 \section{Conclusion}
-
+Coming to a conclusion to the topic, it is clear how such flexible concept, game theory, can be applied to many fields and also in the hardware design field. With the idea of involving techniques of decision making, through algorithms and mathematical models in order to seek for potential malicious elements within a system. With the aid of some examples it is also not difficult to understand the use of the concept and its realization and implementation in the real world. As discussed in this paper, which introduced concepts relevant to High-level-synthesis, it is also important to fetch the utility and importance of the topic towards other disciplines.
 \section*{Acknowledgment}
 
-The preferred spelling of the word ``acknowledgment'' in America is without 
-an ``e'' after the ``g''. Avoid the stilted expression ``one of us (R. B. 
-G.) thanks $\ldots$''. Instead, try ``R. B. G. thanks$\ldots$''. Put sponsor 
-acknowledgments in the unnumbered footnote on the first page.
+
 
 \section*{References}
 
-Please number citations consecutively within brackets \cite{b1}. The 
-sentence punctuation follows the bracket \cite{b2}. Refer simply to the reference 
-number, as in \cite{b3}---do not use ``Ref. \cite{b3}'' or ``reference \cite{b3}'' except at 
-the beginning of a sentence: ``Reference \cite{b3} was the first $\ldots$''
 
-Number footnotes separately in superscripts. Place the actual footnote at 
-the bottom of the column in which it was cited. Do not put footnotes in the 
-abstract or reference list. Use letters for table footnotes.
 
-Unless there are six authors or more give all authors' names; do not use 
-``et al.''. Papers that have not been published, even if they have been 
-submitted for publication, should be cited as ``unpublished'' \cite{b4}. Papers 
-that have been accepted for publication should be cited as ``in press'' \cite{b5}. 
-Capitalize only the first word in a paper title, except for proper nouns and 
-element symbols.
-
-For papers published in translation journals, please give the English 
-citation first, followed by the original foreign-language citation \cite{b6}.
 
 \begin{thebibliography}{00}
 \bibitem{b1} G. Eason, B. Noble, and I. N. Sneddon, ``On certain integrals of Lipschitz-Hankel type involving products of Bessel functions,'' Phil. Trans. Roy. Soc. London, vol. A247, pp. 529--551, April 1955.
