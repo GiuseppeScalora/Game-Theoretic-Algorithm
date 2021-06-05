@@ -40,25 +40,25 @@ Mathematical models have always been used in order to provide aid for the specif
 
 
 \section{Background of game theory}
-The very beginning of some ideas regarding the game theory seem to be assigned to the 18th century while the actual and first development began in the early years of the 20th century (around 1920s) with the work of the mathematicians Emile Borel (1871–1956) and John von Neumann (1903–57). The latter mentioned, published a first work on game theory, alongside Oskar Morgenstein, called "Theory of games and economic behaviour". In the 1950s game-theoretic models began to be used in economic theory, political science and also by psychologists who began studying how human subjects behave in experimental games. Later during the 70s the theory started taking place and being applied into many others fields, one of this recently included, which is computer science[1] (introduction to game theory reference).
+The very beginning of some ideas regarding the game theory seem to be assigned to the 18th century while the actual and first development began in the early years of the 20th century (around 1920s) with the work of the mathematicians Emile Borel (1871–1956) and John von Neumann (1903–57). The latter mentioned, published a first work on game theory, alongside Oskar Morgenstein, called "Theory of games and economic behaviour". In the 1950s game-theoretic models began to be used in economic theory, political science and also by psychologists who began studying how human subjects behave in experimental games. Later during the 70s the theory started taking place and being applied into many others fields, one of this recently included, which is computer science\cite{b1}.
 
 \section{Game theory general model}
-This model based theory consists mainly of two components, a set A of actions that the decision maker can choose upon and specifications of the decision maker´s preferences. Normally, the decision maker is aware of the spectrum of decisions available and it is only allowed to choose one among each set of actions. The set A can include things such as deciding upon whether to eat fish, meat or vegetables, or deciding whether to drink wine, water or coke. Most of the times 2 sets go side by side which means the decision maker has to choose a pair of actions and not just a single one among multiple sets. In terms of preferences, instead, the decision maker can have a favourite option or some equally desirable ones. Let us take the example of a decision maker preferring coke over wine and wine over water, the outcome of this will imply that the decision maker will prefer coke over water. In order to formally define the preferences a payoff function, between actions and numbers, is represented. The numbers represent the value of the preference, the higher the number the more preferred the action.
+This model based theory consists mainly of two components, a set A of actions that the decision maker can choose upon and specifications of the decision maker´s preferences. Normally, the decision maker is aware of the spectrum of decisions available and it is only allowed to choose one among each set of actions. The set A can include things such as deciding upon whether to eat fish, meat or vegetables, or deciding whether to drink wine, water or coke. Most of the times 2 sets go side by side which means the decision maker has to choose a pair of actions and not just a single one among multiple sets. In terms of preferences, instead, the decision maker can have a favourite option or some equally desirable ones. Let us take the example of a decision maker preferring coke over wine and wine over water, the outcome of this will imply that the decision maker will prefer coke over water. In order to formally define the preferences a payoff function, between actions and numbers, is represented. The numbers represent the value of the preference, the higher the number the more preferred the action\cite{b2}.
 
 \section{The key concepts behind the theory}
 In order to understand how and why this algorithm has been developed it is necessary to get familiar with some important concepts used as means of understanding for everyone.
 \subsection{Static games}
 Let us take into account an interactive decision problem which involves two or more individuals who have to come to a final decision according to which the payoff for each person depends on the other individual decision. Commonly, such decision making problems can be assessed as "games" and the individuals making the decisions (2 or more) are called "players". The game does not necessarily need to have a winner and a loser but it can have restricted features, which will lead us to call such games as recreational. On the other hand, games
 that have winners and losers are called zero-sum games (which will not be discussed in this matter). 
-Therefore the definition of a static game describes games in which the decisions are made simultaneously by the players and in ignorance of choices made by other players in the game. According to this they can be referred also as simultaneous decision games, simply because the order in which the decision must be taken is irrelevant[](game theory webb J.). A technical description of the main points a static game looks as follows:
+Therefore the definition of a static game describes games in which the decisions are made simultaneously by the players and in ignorance of choices made by other players in the game. According to this they can be referred also as simultaneous decision games, simply because the order in which the decision must be taken is irrelevant\cite{b3}. A technical description of the main points a static game looks as follows:
 \begin{enumerate}
   \item A set of players must be defined in the form of a set: \[i\in       \{1,2,3...\}\]
   \item A pure strategy set for all players, \textbf{S{\textsubscript{i}}}
   \item Players payoffs, according to the decisions combinations.
 \end{enumerate} 
-A very popular example of such games is shown and explained in the following paragraph: "the prisoner´s dilemma".
+A very popular example of such games is shown and explained in the following paragraph: "the prisoner´s dilemma"\cite{b4}.
 \subsubsection{The prisoner's dilemma}
-Let us assume two different prisoners are going through a trial for a crime, whether it has occured for real or not. Both prisoners have a degree of freedom limited to 2 possible answers, confessing or remain silent, therefore the number of possible outcomes is bounded to 4. These, respectively, are: scenario 1 (For simplification prisoner 1 and 2 will be assessed by using simply P1 and P2). P1 confesses and P2 confesses, this outcome leads both prisoners to be sentenced to 4 years of prison. Scenario 2. P1 confesses and P2 remains silent which leads to P1 being sentenced to 1 year of prison while P2 is sentenced to 5 years. Scenario 3. P1 remains silent and P2 confesses, this will result in the opposite of what just mentioned, P1 will get 5 years and P2 only 1 year. Scenario 4. P1 and P2 remain silent, this will lead to both being sentenced to only 1 year. For a better understanding, the following matrix will visually show the concept in a more schematic way.
+Let us assume two different prisoners are going through a trial for a crime, whether it has occured for real or not. Both prisoners have a degree of freedom limited to 2 possible answers, confessing or remain silent, therefore the number of possible outcomes is bounded to 4. These, respectively, are: scenario 1 (For simplification prisoner 1 and 2 will be assessed by using simply P1 and P2). P1 confesses and P2 confesses, this outcome leads both prisoners to be sentenced to 4 years of prison. Scenario 2. P1 confesses and P2 remains silent which leads to P1 being sentenced to 1 year of prison while P2 is sentenced to 5 years. Scenario 3. P1 remains silent and P2 confesses, this will result in the opposite of what just mentioned, P1 will get 5 years and P2 only 1 year. Scenario 4. P1 and P2 remain silent, this will lead to both being sentenced to only 1 year. For a better understanding, the following matrix, in figure 1, will visually show the concept in a more schematic way.
 \begin{figure}[h]
     \centerline{\includegraphics[scale=0.5]{matrix.png}}
     \caption{Prisoner´s dilemma matrix}
@@ -66,21 +66,19 @@ Let us assume two different prisoners are going through a trial for a crime, whe
 \end{figure}
 
 
-Now as you can see from this 2X2 matrix, the most stable outcome would be the scenario 1, in which both prisoners confess the crime and are not, obviously, allowed to change their declaration at any given time. Meanwhile within the rest of the scenarios the prisoners might decide, at any point, to change their mind in order to obtain a better outcome for themselves, more on the aspect of being egoistic[2](algorithmic game theory reference).
+Now as you can see from this 2X2 matrix, the most stable outcome would be the scenario 1, in which both prisoners confess the crime and are not, obviously, allowed to change their declaration at any given time. Meanwhile within the rest of the scenarios the prisoners might decide, at any point, to change their mind in order to obtain a better outcome for themselves, more on the aspect of being egoistic\cite{b5}.
 
 
 \subsection{Nash equilibrium}
 When dealing with game theory it is necessary to create and instantiate some equilibrium that helps reach the best possible outcome for a system of any nature. When talking about Nash equilibrium, it is only taken into consideration a non-cooperative game which involves 2 or more players. In this particular case, each player's decision should depend on the other players' decisions, therefore each of them must give an assumption or, better, create a belief of what the others will choose. The mainly basis for this derives from the assumption that the players have already gotten a past experience in the game in order to create reliable beliefs about the other players' possible behaviours.
 This is only possible in idealized circumnstances, although in many cases the players, even with past experiences, are only aware of the behaviours of other typical players but not of specific ones. This means that in the solution, given by the Nash equilibrium each player's beliefs are assumed to be correct hence the player's choices will be made according to other players' choices. 
-\textit{"A Nash equilibrium is an action profile a\textsuperscript{\text{*}} with the property that no player \textbf{i} can do better by choosing an action different from a\textsuperscript{\text{*}}\textsubscript{i}, given that every other player \textbf{j} adheres to a\textsuperscript{\text{*}}\textsubscript{j} }
-(martinj osborne an introduction to game theory-oxford university press usa2003 page 32) .
+\textit{"A Nash equilibrium is an action profile a\textsuperscript{\text{*}} with the property that no player \textbf{i} can do better by choosing an action different from a\textsuperscript{\text{*}}\textsubscript{i}, given that every other player \textbf{j} adheres to a\textsuperscript{\text{*}}\textsubscript{j} }\cite{b6}.
 
-An excellent style manual for science writers is \cite{b7}.
 
 \subsection{Dynamic games}
 On the contrary of static games, dynamic games involve many situations of interest in which decisions are
 made at various times, not simultaneously, taking into account the choices made earlier. Therefore dynamic games introduce an explicit time-schedule which describes the exact time spans, or time points, during which the players make their decisions.
-Dynamic games can be represented by a game decision tree. The filled black circles show the time points at which decisions are taken. The connections between circles are self explanatory, they represent branches from which other action could occur. At the bottom of the tree, after every decision sequence has come to its end, there is the payoff, usually specified and written. By convention the tree is drawn "upside-down" which means that the time increases as the tree branches downwards. (reference: game theory Webb book)
+Dynamic games can be represented by a game decision tree. The filled black circles show the time points at which decisions are taken. The connections between circles are self explanatory, they represent branches from which other action could occur. At the bottom of the tree, after every decision sequence has come to its end, there is the payoff, usually specified and written. By convention the tree is drawn "upside-down" which means that the time increases as the tree branches downwards.
 \subsubsection{Dinner party game}
 In order to understand the example, the tree will be first shown and therefore analyzed.
 \begin{figure}[h]
@@ -97,7 +95,7 @@ Let us consider the tree shown, in which the Husband will start the tree of deci
 \\
 
 In order to solve this problem, we can assume that the husband has told the wife whether he bought fish or meat. Therefore, the discussion proceeds with a backward induction approach, if the husband has bought meat, for instance, then the wife will be aware of that and hence she will buy red wine in order to have a payoff = 1 rather than a payoff = 0 buying white wine. If the husband, instead, has bought fish, then the wife will proceed with buying white wine and have a payoff = 2 rather than = 0 with red wine and fish.
-It is pretty clear that in the best possible scenario, the husband will buy meat, in order to have a payoff = 2 and this will lead the wife in choosing red wine (payoff = 1) for the wife. In the end the dinner will be made of meat and red wine.
+It is pretty clear that in the best possible scenario, the husband will buy meat, in order to have a payoff = 2 and this will lead the wife in choosing red wine (payoff = 1) for the wife. In the end the dinner will be made of meat and red wine.\cite{b7}
 
 
 
@@ -119,14 +117,11 @@ Firm 1 always moves first, generating an output strategy, and firm 2 always foll
 \item For each output, firm 1 must also decides its strategy upon maximization of its profit, so if firm 1 output is \textit{q\textsubscript{1}} and firm 2 output is \textit{b\textsubscript{2}}, the total selling price \textit{P\textsubscript{d}} is given by the sum of \textit{q\textsubscript{1}} + \textit{b\textsubscript{2}}.
 \end{enumerate}
 Therefore, if firm 2 best output is \textit{b\textsubscript{2}} and firm 1 best output depends on firm 2 outputs, the new output for firm 1 will be defined as \textit{q*\textsubscript{1}}
-therefore, the pair (\textit{q*\textsubscript{1}},\textit{b\textsubscript{2}}) will now lead firm 2 to behave accordingly to firm 1 new possible output, hence the new output for firm 2 will be \textit{q*\textsubscript{2}} coming, in conclusion, to a win-win situation for both firms, in which they perceives the maximum profits . This then leads to a subgame perfect equilibrium defined by the pair (\textit{q*\textsubscript{1}}, \textit{q*\textsubscript{2}}).
+therefore, the pair (\textit{q*\textsubscript{1}},\textit{b\textsubscript{2}}) will now lead firm 2 to behave accordingly to firm 1 new possible output, hence the new output for firm 2 will be \textit{q*\textsubscript{2}} coming, in conclusion, to a win-win situation for both firms, in which they perceives the maximum profits . This then leads to a subgame perfect equilibrium defined by the pair (\textit{q*\textsubscript{1}}, \textit{q*\textsubscript{2}}).\cite{b8}
 
 \section{Applications}
-\subsection{Game theory on Trojan detection for HLS}
-\subsubsection{Motivation}
-
-\subsubsection{Approach and implementation}
 \subsection{Validation and verification of hardware design using the Game theory}
+The concept explained and discussed in the following chapter, are taken from the conference paper.\cite{b9}
 \subsubsection{Motivation}
 When it comes to Hardware verification and validation, it is important to ensure that the design properties and goals, are specified accurately for the overall purpose of the final hardware design process. The accuracy is handled by a cooperation of the full spectrum of design teams which have to work on the project, therefore it requires a highly efficient communication among the teams. In terms of hardware verifications, it is necessary to apply mathematical models as proof of stability and accuracy for the implementation (reason why the Game Theory algorithm is feasible for this scope, being itself a mathematical model). The main focus of this application is the analysis and solution of problems regarding the security in Hardware systems and the correction of the desired behaviours of the already mentioned systems.
 Game theory, is applied here due to its useful aid in terms of securing physical aspects, strategic resources and power infrastructure. As already mentioned in the paper, more specifically, the Stackelberg game formulations will come in help. The main concept behind this is: the assumption that an attacker can observe all the security decisions placed by the defender. Verifying a hardware design as result of a security strategy implies that deployment schedules need to be as strict as possible, the state space size of the system, depends on its complexity and how critical the design is.
@@ -176,33 +171,78 @@ In order to compute ASE, the following mathematical constraints are necessary:
 
 Accordingly, equation 1 serves to find the maximization of the utility for the defender, the solutions must respect constraints 2-8. 
 Constraints 4 and 7, meanwhile, enforce the maximization of the defender´s utility in respect to the attacker strategy. Constraint 4 forces the attacker to at least attack one node. Constraint 6 creates a gap variable between attacker optimal value and attacker target node value. Constraints 7 and 5 force the attacker to attack a node only if it can be done with maximum utility from the attacker. Lastly, constraint 8 is the final equation to find the maximum utility for the defender, given attacker strategy \textit{a} and defender strategy \textit{q}, once all the constraints have been satisfied. The results are then gonna be sorted from highest to lowest in to \textit{q}*
-To read and interpret the results of the mathematical model, we take the results for \textit{q}* and compare if the verification efforts have been distribuited properly, if so, then the target node \textit{t} is considered to be validated and secure, proportional to \textit{q}*\textsubscript{t}. For example, a \textit{q}*\textsubscript{t} value of 1 is considered to fully adhere to the verification specifications, while a value of 0 is not considered so but it is still not neglected, only put on a lower prioritization.
+To read and interpret the results of the mathematical model, we take the results for \textit{q}* and compare if the verification efforts have been distribuited properly, if so, then the target node \textit{t} is considered to be validated and secure, proportional to \textit{q}*\textsubscript{t}. For example, a \textit{q}*\textsubscript{t} value of 1 is considered to fully adhere to the verification specifications, while a value of 0 is not considered so but it is still not neglected, only put on a lower prioritization.\\
 
 
+\subsection{Game theory on Trojan detection for HLS}
+The following chapter focuses on a brief explanation of a research done about the topic of hardware trojan detection in HLS. All the concepts have been taken and re-elaborated from the cited conference paper. \cite{b10}
+\subsubsection{Motivation}
+As discussed in the previous application, when it comes to IC manifacturing, the developers might add by mistake some malicious trojans which have the capability of disrupting and compromising the behaviour of the circuit and therefore of the whole system surrounding it. At this point it is up to the company receiving the IC to test for trojans. It would realistically be too costly to test for every type of trojans therefore the purpose of this research is to develop a strategy that checks for what exact type of trojans to test for and how much damage can they bring to the system.
+\subsubsection{A different approach for Hardware Trojans detection: Expected Utility Theory}
+In order to do what mentioned, a static zero-sum noncooperative game is formulated. Its strategy looks like: {N, {S\textsubscript{i} $i\in N$, {u\textsubscript{i} $i\in N$}. In order, \textit{N}:= {a, d} refers to the set of players,the so called attacker and defender. S\textsubscript{i} is the strategy space for each player, set of trojans to insert for the attacker and set of trojans to test for in the case of the defender, referred as with K. Lastly u\textsubscript{i} is the utility function.
+Let us define the defender utility function for each set K.
+\begin{displaymath}
+u_d(s_d, s_a) = \begin{cases} F_sa, & \mbox{if } s_a\in s_d \\ -V_sa, & \mbox{otherwise } \end{cases}
+\end{displaymath}
+The utility function for the attacker instead will just be -u\textsubscript{d}(s\textsubscript{d}, s\textsubscript{a}).
 
+Since the strategy for both defender and attacker is based upon probabilistic, the game is formulated under non deterministic mixed strategies.
+In game theory players are supposed to act rationally therefore, each player will choose upon their strategy objectively more specifically in this case they will choose upon a vector, defined as \textbf{p} = [\textbf{p}\textsubscript{d}, \textbf{p}\textsubscript{a}] this vector will give an expected utility value according to the Expected Utility Theory which define the utility function as: 
+\begin{displaymath}
+U_i^{EUT}(\textbf{p}_d, \textbf{p}_a) = \sum_{s\in S} (p_d(s_d)p_a(s_a)) u_i(\textbf{s})
+\end{displaymath}
+
+Where \textbf{s} is simply a vector of attacker and defender strategies.
+
+\subsubsection{Game solution}
+The solution to the already proposed theory is based upon a mixed-strategy Nash equilibrium (MSNE). The definition for this looks as follows:\\
+\textit{A mixed strategy profile \textbf{p}* is said to be a mixed
+strategy Nash equilibrium if for the defender, d, and attacker, a,
+we have:}
+\begin{displaymath}
+U_d(\textbf{p}*_d,\textbf{p}*_a) \geq U_d(\textbf{p}_d,\textbf{p}*_a), \forall p_d\in P_d 
+\end{displaymath}
+\begin{displaymath}
+U_a(\textbf{p}*_a,\textbf{p}*_d) \geq U_a(\textbf{p}_a,\textbf{p}*_d), \forall p_a\in P_a
+\end{displaymath}
+
+In the MSNE the defender and the attacker, have no incentive to deviate from their current mixed strategy given that both of them are using the same MSNE strategy. Under rational choice, EUT, the defender will choose an optimal randomization over the testing strategies. Meanwhile, the attacker, under rational choice and according to MSNE, will choose its optimal randomization upon the trojans to insert. They both assume that the opposite side is using a rational choice and their utility is maximized according to EUT.
+
+Considering the zero-sum nature of the game, the Von Neumann indifference principle comes in hand to find closed-form solutions. According to this, the expected utilities under MSNE are equal but opposite. The strategy space is very large therefore it might be difficult to find the solution to all the important and relevant equations, in this concern, an algorithm must be developed from a starting point in the system. An example of the algorithm is shown in the figure below:
+\begin{figure}[h]
+    \centerline{\includegraphics[scale=0.6]{Algorithm.png}}
+    \caption{Fictitious algorithm for strategy vectors}
+    \label{algo}
+\end{figure} 
+
+Going through the pseudo-coded algorithm step by step, the final result will give us in return the 2 strategy vectors necessary for the computation of the expected utilities for both attacker and defender.
+
+\subsubsection{Final considerations}
+The initial problem was conceived as a noncooperative game with two players, attacker and defender and the solution proposed to finding the potential inserted trojans, was based upon testing strategies using the Expected Utility Theory and the concept of Mixed Strategy Nash Equilibrium.
+Formulas have been derived in order to evaluate the strategies and the utilities for both players with also the help of an algorithm. Finally finding out how irrational behaviours and risks can impact the interactions between the two players present in the game.
 
 \section{Conclusion}
-Coming to a conclusion to the topic, it is clear how such flexible concept, game theory, can be applied to many fields and also in the hardware design field. With the idea of involving techniques of decision making, through algorithms and mathematical models in order to seek for potential malicious elements within a system. With the aid of some examples it is also not difficult to understand the use of the concept and its realization and implementation in the real world. As discussed in this paper, which introduced concepts relevant to High-level-synthesis, it is also important to fetch the utility and importance of the topic towards other disciplines.
+Coming to a conclusion to the topic, it is clear how such flexible concept, game theory, can be applied to many fields and also in the hardware design field. With the idea of involving techniques of decision making, through algorithms and mathematical constraints in order to seek for potential malicious elements within a system. With the aid of some examples it is also not difficult to understand the use of the concept, its realization and implementation in the real world applications. As discussed in this paper, which introduced concepts mainly relevant to High-level-synthesis, it is also important to fetch the utility and importance of the topic towards other disciplines without excluding them.
 \section*{Acknowledgment}
 
 
 
-\section*{References}
-
+\section*{Reference style}
+The reference and citation style used in this paper make sure that the reference is cited at the end of the discussed chapter, in order to state where is the concept coming from. If the reference has been put after an image then it will include the image source too.
 
 
 
 \begin{thebibliography}{00}
-\bibitem{b1} G. Eason, B. Noble, and I. N. Sneddon, ``On certain integrals of Lipschitz-Hankel type involving products of Bessel functions,'' Phil. Trans. Roy. Soc. London, vol. A247, pp. 529--551, April 1955.
-\bibitem{b2} J. Clerk Maxwell, A Treatise on Electricity and Magnetism, 3rd ed., vol. 2. Oxford: Clarendon, 1892, pp.68--73.
-\bibitem{b3} I. S. Jacobs and C. P. Bean, ``Fine particles, thin films and exchange anisotropy,'' in Magnetism, vol. III, G. T. Rado and H. Suhl, Eds. New York: Academic, 1963, pp. 271--350.
-\bibitem{b4} K. Elissa, ``Title of paper if known,'' unpublished.
-\bibitem{b5} R. Nicole, ``Title of paper with only first word capitalized,'' J. Name Stand. Abbrev., in press.
-\bibitem{b6} Y. Yorozu, M. Hirano, K. Oka, and Y. Tagawa, ``Electron spectroscopy studies on magneto-optical media and plastic substrate interface,'' IEEE Transl. J. Magn. Japan, vol. 2, pp. 740--741, August 1987 [Digests 9th Annual Conf. Magnetics Japan, p. 301, 1982].
-\bibitem{b7} M. Young, The Technical Writer's Handbook. Mill Valley, CA: University Science, 1989.
+\bibitem{b1} M. Osborne, An introduction to game theory by Martin J. Osborne. Oxford: Oxford University Press, 2004, p. 3.
+\bibitem{b2} M. Osborne, An introduction to game theory by Martin J. Osborne. Oxford: Oxford University Press, 2004, pp. 4-6.
+\bibitem{b3} J. Webb, Game theory. [London]: Springer, 2007, p. 61.
+\bibitem{b4} J. Webb, Game theory. [London]: Springer, 2007, pp. 63-64.
+\bibitem{b5} N. Nisan, Algorithmic game theory. Cambridge: Cambridge University Press, 2011, pp. 3-4.
+\bibitem{b6} M. Osborne, An introduction to game theory by Martin J. Osborne. Oxford: Oxford University Press, 2004, p. 32.
+\bibitem{b7} J. Webb, Game theory. [London]: Springer, 2007, pp. 89-91.
+\bibitem{b8} M. Osborne, An introduction to game theory by Martin J. Osborne. Oxford: Oxford University Press, 2004, pp. 184-185.
+\bibitem{b9} Smith, Andrew, Mayo, Jackson, Kammler, Vivian, Armstrong, Robert, Vorobeychik, Yevgeniy. (2017). Using computational game theory to guide verification and security in hardware designs. 110-115.
+\bibitem{b10} W. Saad, A. Sanjab, Y. Wang, C. A. Kamhoua and K. A. Kwiat, "Hardware Trojan Detection Game: A Prospect-Theoretic Approach," in IEEE Transactions on Vehicular Technology, vol. 66, no. 9, pp. 7697-7710, Sept. 2017, doi: 10.1109/TVT.2017.2686853.
 \end{thebibliography}
-\vspace{12pt}
-\color{red}
-IEEE conference templates contain guidance text for composing and formatting conference papers. Please ensure that all template text is removed from your conference paper prior to submission to the conference. Failure to remove the template text from your paper may result in your paper not being published.
 
 \end{document}

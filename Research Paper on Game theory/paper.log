@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.4.28)  26 MAY 2021 09:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.4.28)  5 JUN 2021 17:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**conference_101719.tex
-(./conference_101719.tex
+**paper.tex
+(./paper.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-18> (./IEEEtran.cls
 Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
@@ -250,8 +250,8 @@ File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count276
 \l__pdf_internal_box=\box51
 )
-(./conference_101719.aux)
-\openout1 = `conference_101719.aux'.
+(./paper.aux)
+\openout1 = `paper.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
@@ -331,69 +331,79 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <gametree.png, id=14, 438.8897pt x 246.9225pt>
 File: gametree.png Graphic file (type png)
 <use gametree.png>
-Package pdftex.def Info: gametree.png  used on input line 87.
+Package pdftex.def Info: gametree.png  used on input line 85.
 (pdftex.def)             Requested size: 307.22069pt x 172.84456pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--98
+Underfull \hbox (badness 10000) in paragraph at lines 90--96
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--98
+Underfull \hbox (badness 10000) in paragraph at lines 90--96
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--98
+Underfull \hbox (badness 10000) in paragraph at lines 90--96
 
  []
 
 [2 <./matrix.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 114--118
+Underfull \hbox (badness 10000) in paragraph at lines 112--116
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--118
+Underfull \hbox (badness 10000) in paragraph at lines 112--116
 
  []
 
+Package textcomp Info: Symbol \textasciiacute not provided by
+(textcomp)             font family ptm in TS1 encoding.
+(textcomp)             Default family used instead on input line 130.
+Package textcomp Info: Symbol \textasciiacute not provided by
+(textcomp)             font family ptm in TS1 encoding.
+(textcomp)             Default family used instead on input line 131.
 [3 <./gametree.png>]
-Package textcomp Info: Symbol \textasciiacute not provided by
-(textcomp)             font family ptm in TS1 encoding.
-(textcomp)             Default family used instead on input line 135.
-Package textcomp Info: Symbol \textasciiacute not provided by
-(textcomp)             font family ptm in TS1 encoding.
-(textcomp)             Default family used instead on input line 136.
 <netlist.png, id=27, 401.24907pt x 185.19188pt>
 File: netlist.png Graphic file (type png)
 <use netlist.png>
-Package pdftex.def Info: netlist.png  used on input line 141.
+Package pdftex.def Info: netlist.png  used on input line 136.
 (pdftex.def)             Requested size: 240.75128pt x 111.11597pt.
 <cascade network.png, id=28, 261.97874pt x 181.67876pt>
 File: cascade network.png Graphic file (type png)
 <use cascade network.png>
-Package pdftex.def Info: cascade network.png  used on input line 151.
+Package pdftex.def Info: cascade network.png  used on input line 146.
 (pdftex.def)             Requested size: 157.18845pt x 109.00809pt.
 Package textcomp Info: Symbol \textasciiacute not provided by
 (textcomp)             font family ptm in TS1 encoding.
-(textcomp)             Default family used instead on input line 165.
+(textcomp)             Default family used instead on input line 160.
 Package textcomp Info: Symbol \textasciiacute not provided by
 (textcomp)             font family ptm in TS1 encoding.
-(textcomp)             Default family used instead on input line 169.
+(textcomp)             Default family used instead on input line 164.
 <ASE equations.png, id=29, 511.9125pt x 440.39531pt>
 File: ASE equations.png Graphic file (type png)
 <use ASE equations.png>
-Package pdftex.def Info: ASE equations.png  used on input line 172.
+Package pdftex.def Info: ASE equations.png  used on input line 167.
 (pdftex.def)             Requested size: 255.95563pt x 220.19711pt.
  [4 <./netlist.png> <./cascade network.png>]
 Package textcomp Info: Symbol \textasciiacute not provided by
 (textcomp)             font family ptm in TS1 encoding.
-(textcomp)             Default family used instead on input line 178.
+(textcomp)             Default family used instead on input line 173.
 
+Underfull \hbox (badness 10000) in paragraph at lines 172--175
+
+ []
+
+<Algorithm.png, id=39, 436.63126pt x 599.23875pt>
+File: Algorithm.png Graphic file (type png)
+<use Algorithm.png>
+Package pdftex.def Info: Algorithm.png  used on input line 213.
+(pdftex.def)             Requested size: 261.98077pt x 359.54602pt.
+[5 <./ASE equations.png>]
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -405,34 +415,38 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[5 <./ASE equations.png>] (./conference_101719.aux) ) 
+[6 <./Algorithm.png>] (./paper.aux) )
+(\end occurred inside a group at level 2)
+
+### simple group (level 2) entered at line 182 ({)
+### simple group (level 1) entered at line 182 ({)
+### bottom level 
 Here is how much of TeX's memory you used:
- 3929 strings out of 478994
- 56608 string characters out of 5862207
- 365041 words of memory out of 5000000
- 21380 multiletter control sequences out of 15000+600000
+ 3939 strings out of 478994
+ 56604 string characters out of 5862207
+ 365035 words of memory out of 5000000
+ 21389 multiletter control sequences out of 15000+600000
  441642 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,8n,74p,1605b,313s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2021/texmf-dis
-t/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{c:/texlive/2021/texmf-dist/fonts/e
-nc/dvips/base/8r.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmex10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.p
-fb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/tex
-live/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2021/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public
-/cm-super/sfrb0900.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/
-sfrm0800.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1000.p
-fb><c:/texlive/2021/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/202
-1/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><c:/texlive/2021/texmf-dist/font
-s/type1/urw/times/utmr8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/times/
-utmri8a.pfb>
-Output written on conference_101719.pdf (5 pages, 281008 bytes).
+ 68i,8n,74p,1593b,313s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t
+s1.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2021
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2021/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2021/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
+5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/
+texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrb0900.pfb><c:/texlive/20
+21/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2021/texmf-d
+ist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2021/texmf-dist/fonts/
+type1/urw/times/utmb8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/times/ut
+mbi8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texl
+ive/2021/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on paper.pdf (6 pages, 493222 bytes).
 PDF statistics:
- 89 PDF objects out of 1000 (max. 8388607)
- 57 compressed objects within 1 object stream
+ 94 PDF objects out of 1000 (max. 8388607)
+ 59 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
