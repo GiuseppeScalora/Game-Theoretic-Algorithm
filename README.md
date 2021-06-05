@@ -19,9 +19,9 @@ brief background introduction of the concept
 
 explanation of how this theory works or is applied in real life
 
-## Pros and cons
+## System model
 
-overview at the benefits and the cons of using and/or application of this theory
+overview at the model of the overall usage of the game theory and description of important concepts
 
 ## Applications
 
