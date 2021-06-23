@@ -61,7 +61,7 @@ A very popular example of such games is shown and explained in the following par
 Let us assume two different prisoners are going through a trial for a crime, whether it has occured for real or not. Both prisoners have a degree of freedom limited to 2 possible answers, confessing or remain silent, therefore the number of possible outcomes is bounded to 4. These, respectively, are: scenario 1 (For simplification prisoner 1 and 2 will be assessed by using simply P1 and P2). P1 confesses and P2 confesses, this outcome leads both prisoners to be sentenced to 4 years of prison. Scenario 2. P1 confesses and P2 remains silent which leads to P1 being sentenced to 1 year of prison while P2 is sentenced to 5 years. Scenario 3. P1 remains silent and P2 confesses, this will result in the opposite of what just mentioned, P1 will get 5 years and P2 only 1 year. Scenario 4. P1 and P2 remain silent, this will lead to both being sentenced to only 2 years. For a better understanding, the following matrix, in figure 1, will visually show the concept in a more schematic way.
 \begin{figure}[h]
     \centerline{\includegraphics[scale=0.5]{matrix.png}}
-    \caption{Prisoner´s dilemma matrix}
+    \caption{Prisoner´s dilemma matrix \cite{b5}}
     \label{pdmatrix}
 \end{figure}
 
@@ -83,7 +83,7 @@ Dynamic games can be represented by a game decision tree. The filled black circl
 In order to understand the example, the tree will be shown and therefore analyzed.
 \begin{figure}[h]
     \centerline{\includegraphics[scale=0.7]{gametree.png}}
-    \caption{dinner party game tree}
+    \caption{dinner party game tree \cite{b7}}
     \label{gametree}
 \end{figure}
 
@@ -134,7 +134,7 @@ To briefly describe how the system is implemented, the following chapter will an
 The main property to compute for security is the value of the defender of a vulnerable target. This is realized by the combination of how succesful an attack can be and the individual value of the target. Taking into account that a target will most likely be a netlist constructed by a Boolean network of logic gates, it is important to select the output wire for each flip-flop, within the target area of the hardware system, and we call it a Boolean node. Each output will then be the input of another flip-flop. Output nodes are defined as \textit{j} and input nodes to a flip-flop are defined as \textit{i}, these both, connected together, form an edge (\textit{i}, \textit{j}). The Boolean network G = (T, E), where T is the set of nodes or targets, and E is the set of edges, is shown in the following figure.
 \begin{figure}[h]
     \centerline{\includegraphics[scale=0.6]{netlist.png}}
-    \caption{Netlist of flip-flops and logic gates}
+    \caption{Netlist of flip-flops and logic gates \cite{b9}}
     \label{netlist}
 \end{figure} 
 
@@ -144,7 +144,7 @@ Given that, the transfer function for each node can be represented as a truth ta
 \item \textit{Independent cascade contagion} defines the determination process of the contagion failure rate throughout the system. The input graph takes the network G = (T, E), as explained earlier, and defines the probability \textit{p}\textsubscript{i,i'} of the failure spread rate among the neighbors nodes, an example of the boolean network is shown as following:
 \begin{figure}[h]
     \centerline{\includegraphics[scale=0.6]{cascade network.png}}
-    \caption{Converted Boolean network with cascade contagion probability}
+    \caption{Converted Boolean network with cascade contagion probability \cite{b9}}
     \label{cascade}
 \end{figure} 
 
@@ -165,7 +165,7 @@ The solution applied to hardware verification with the aid of the Stackelberg ga
 In order to compute ASE, the following mathematical constraints are necessary:
 \begin{figure}[h]
     \centerline{\includegraphics[scale=0.5]{ASE equations.png}}
-    \caption{ASE computational equations}
+    \caption{ASE computational equations \cite{b9}}
     \label{ase}
 \end{figure} 
 
@@ -211,7 +211,7 @@ In the MSNE the defender and the attacker, have no incentive to deviate from the
 Considering the zero-sum nature of the game, the Von Neumann indifference principle comes in hand to find closed-form solutions. According to this, the expected utilities under MSNE are equal but opposite. The strategy space is very large therefore it might be difficult to find the solution to all the important and relevant equations, in this concern, an algorithm must be developed from a starting point in the system. An example of the algorithm is shown in the figure below:
 \begin{figure}[h]
     \centerline{\includegraphics[scale=0.6]{Algorithm.png}}
-    \caption{Fictitious algorithm for strategy vectors}
+    \caption{Fictitious algorithm for strategy vectors \cite{b10}}
     \label{algo}
 \end{figure} 
 
