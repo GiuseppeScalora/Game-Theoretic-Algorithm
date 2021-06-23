@@ -3,6 +3,8 @@
  
  Scalora Giuseppe, ELE, 6th semester, HSHL.
  
+ Final output in folder "paper" under paper.pdf.
+ 
 ## Motivation
 
 why should you know about the game theory
