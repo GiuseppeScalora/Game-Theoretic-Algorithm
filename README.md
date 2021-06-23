@@ -3,7 +3,7 @@
  
  Scalora Giuseppe, ELE, 6th semester, HSHL.
  
- Final output in folder "paper" under paper.pdf.
+ Final output in folder "Research Paper on Game theory" under "paper.pdf".
  
 ## Motivation
 
